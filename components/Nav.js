@@ -11,6 +11,10 @@ const Nav = () => {
       <Link href="/login" passHref={true} legacyBehavior={true}>
         <a className="mx-2 my-1">Login</a>
       </Link>
+
+      <Link href="/logout" passHref={true} legacyBehavior={true}>
+        <a className="mx-2 my-1">LogOut</a>
+      </Link>
     </nav>
   );
 };

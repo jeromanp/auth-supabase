@@ -3,7 +3,7 @@ import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useSession, useSupabaseClient } from "@supabase/auth-helpers-react";
 import Account from "../components/Account";
 
-const Home = () => {
+const Login = () => {
   const session = useSession();
   const supabase = useSupabaseClient();
   console.log("SESSION", session);
@@ -23,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Login;
