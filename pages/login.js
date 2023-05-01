@@ -11,10 +11,12 @@ const Login = () => {
     <div className="container" style={{ padding: "50px 0 100px 0" }}>
       {!session ? (
         <Auth
+        redirectTo="http://localhost:3000/"
           providers={["github", "google"]}
           supabaseClient={supabase}
           appearance={{ theme: ThemeSupa }}
           theme="white"
+          socialLayout="horizontal"
         />
       ) : (
         <Account session={session} />
