@@ -5,7 +5,6 @@ import Avatar from "./Avatar";
 export default function Account({ session }) {
   const supabase = useSupabaseClient();
   const user = useUser();
-  console.log("USER", user);
   const [loading, setLoading] = useState(true);
   const [username, setUsername] = useState(null);
   const [fullName, setFullName] = useState(null);
