@@ -6,7 +6,7 @@ import Account from "../components/Account";
 const Login = () => {
   const session = useSession();
   const supabase = useSupabaseClient();
-  console.log("SESSION", session);
+  // console.log("SESSION", session);
   return (
     <div className="container" style={{ padding: "50px 0 100px 0" }}>
       {!session ? (
